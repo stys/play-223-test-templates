@@ -44,7 +44,7 @@ public class ApplicationTest {
 	public void renderTestTemplate() {
 		Content html = views.html.test.render("This is a test template");
 		assertThat(contentType(html)).isEqualTo("text/html");
-        assertThat(contentAsString(html)).contains("Your new application is ready.");
+        assertThat(contentAsString(html)).contains("This is a test template");
 	}
 	
 

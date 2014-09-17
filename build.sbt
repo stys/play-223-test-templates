@@ -9,3 +9,5 @@ libraryDependencies ++= Seq(
 )     
 
 play.Project.playJavaSettings
+
+sourceGenerators in Test <+= (state, unmanagedSourceDirectories in Test, sourceManaged in Test, templatesTypes, templatesImport) map ScalaTemplates
